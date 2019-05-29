@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="vendor/fontawesome/css/all.css">
+    <link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.css">
+
+    <script type="text/javascript" src="vendor/jquery/jquery-3.4.0.js"></script>
+    <script type="text/javascript" src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <link rel='stylesheet prefetch' href='https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css'>
+
+    <link rel="stylesheet" href="css/dev20.css" >
+</head>
+<body>
+<form action="fb.php" method="post">
+<div class="container">
+    <div class="row">
+        <div class="col-6">
+            <p>FPT Aptech Hà Nội</p>
+            <p>DEV 20</p>
+        </div>
+
+        <div class="col-6">
+            <p id="result"></p>
+        </div>
+    </div>
+
+    <h1>Feedback</h1>
+    <div class="form-feedback">
+        
+        <div class="id">
+            <input type="text" name="id" placeholder="ID" required>
+        </div>
+
+
+        <div class="row" >
+            <div class="col-4">
+                <input type="radio" name="danhgia" value="tot" required> Tốt
+            </div>
+
+            <div class="col-4">
+                <input type="radio" name="danhgia" value="binhthuong" > Bình thường
+            </div>
+
+            <div class="col-4">
+               <input type="radio" name="danhgia" value="kem" > Kém
+            </div>
+
+
+        </div>
+
+        <div class="cmt">
+         <textarea class="cmt" name="comment"> </textarea>
+        </div>
+
+        <div>
+        <input type="file" name="anh">
+        </div>
+
+
+        <input class="submit" type="submit" value="Gửi">
+
+    </div>
+</div>
+
+<script type="text/javascript">
+        var date = new Date();
+        document.getElementById('result').innerText = date;
+</script>
+</form>
+</body>
+
+</html>
