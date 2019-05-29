@@ -1,0 +1,21 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+
+}
+.container{
+    width: 970px;
+    height: auto;
+    background-color: silver;
+}
+
+h1{
+    text-align: center;
+}
+.cmt{
+    width: 500px;
+    height: 200px;
+}
